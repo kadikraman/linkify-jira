@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Linkify JIRA",
+  "version": "0.1.0",
+  "description": "Open all JIRA links in a new tab",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://*.atlassian.net/*", "https://jira.atlassian.com/*"]
+  }]
+}
